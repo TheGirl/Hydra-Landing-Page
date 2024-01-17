@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.navbar {
+    background: #302C42;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 70px;
+}
+
+.logo-container {
+    display: flex;
+    height: auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigations {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.navigations li a {
+    text-decoration: none;
+    color: #FFFFFF;
+} 
+
+.navigations li a:hover {
+    color: #C0B7E8;
+}
+
+.nav-cta-btn {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-cta-btn button {
+    border: 0px solid #FFFFFF;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;   
+    font-size: 12px;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #8176AF, #C0B7E8);
+}
+
+.nav-cta-btn button:hover {
+    border: 1.5px solid #FFFFFF;
+    background: transparent;
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobile-nav {
+    background: #302C42;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: 70%;
+    height: 70vh;
+    color: #FFFFFF;
+    transition: 0.4s ease;
+    z-index: 20;
+    animation-name: mobileNavAnime;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    opacity: .5;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    color: #C0B7E8;
+    animation-name: closeAnime;
+    animation-duration: .5s;
+    animation-timing-function: ease-in;
+}
+
+.mobile-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 12px;
+    color: #FFFFFF;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.mobile-nav ul li a:hover {
+    color: #C0B7E8;
+}
+
+.mobile-nav ul li button:hover {
+    background-image: linear-gradient(to right, #8176AF, #C0B7E8);
+
+}
+
+ul li button {
+    border: 1.5px solid #FFFFFF;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 12px;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+@media (max-width: 1086px) {
+    .navbar {
+        background: #302C42;
+    }
+
+    .navigations {
+        gap: 20px;
+    }    
+
+    .logo-container .logo {
+        height: 80px;
+    }
+
+    .logo-container .logo-text {
+        height: 30px;
+    }
+
+    .nav-cta-btn {
+        gap: 15px;
+    }
+
+    .nav-cta-btn button {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 890px) {
+    .navbar {
+        padding: 20px 50px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navigations {
+        display: none;
+    }    
+    
+    .nav-cta-btn {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    .navigations {
+        font-size: 17px;
+    }
+
+    .nav-cta-btn button {
+        font-size: 17px;
+    }
+}
+
+@keyframes mobileNavAnime {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: .7;
+      }
+}
+
+@keyframes closeAnime {
+    from {
+        transform: translateY(0%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(-100%);
+        opacity: .7;
+      }
+}

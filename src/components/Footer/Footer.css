@@ -1,0 +1,133 @@
+footer {
+    color: hsl(0, 0%, 100%);
+    background-color: #302C42;
+    padding: 60px 70px;
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer div {
+    padding-top: 20px;
+}
+
+.footer img {
+    margin-top: 20px;
+}
+
+.footer-demarcation {
+    margin-top: -30px;
+    width: 5px;
+    height: 200px;
+    background-image: linear-gradient(to bottom, #343045, #343045, #C0B7E8, #8176AF, #343045);
+}
+
+.socials {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.socials div {
+    margin-top: -25px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    background-color: #C0B7E8;
+    border-radius: 100%;
+    border: 5px solid #C0B7E8;
+    color: #302C42;
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.socials button {
+    border: 0px solid #FFFFFF;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #343045;
+    background-image: linear-gradient(to right, #8176AF, #C0B7E8);
+    align-self: flex-start;
+    font-size: 10px;
+}
+
+.last-footer-border {
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, #343045, #C0B7E8, #8176AF, #343045);
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.last-footer-p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.last-footer-p-small {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    footer {
+        font-size: 12px;
+    } 
+}
+
+@media (max-width: 840px) {
+
+    .socials {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socials {
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .socials button {
+        align-self: center;
+    }
+
+    @media (max-width: 500px) {
+        .socials button {
+            width: 100%;
+        }
+
+        .last-footer-p {
+            display: none;
+        }
+
+        .last-footer-p-small {
+            display: block;
+            text-align: center;
+            line-height: 2;
+            letter-spacing: 1px;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.service-box {
+    width: 280px;
+    border-radius: 40px;
+    background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+    font-family: Montserrat;
+    flex: 200px;
+}
+
+.service-box img {
+    background-color: rgba(14, 14, 14, 0.32);
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    padding: 11px;
+}
+
+.service-box h3 {
+    line-height: normal;
+    font-weight: 700;
+}
+
+.service-box div {
+    width: 154px;
+    height: 1.5px;
+    stroke-width: 1px;
+    background-color: rgba(192, 183, 232, 0.33);
+}
+
+.service-box p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.service-box button {
+    border: 0px solid #FFFFFF;
+    border-radius: 50px;
+    padding: 12px 24px;
+    margin: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: #343045; 
+    background-image: linear-gradient(to right, #8176AF, #C0B7E8);
+}
+
+.service-box button:hover {
+        border: 1.5px solid #FFFFFF;
+        background: transparent;
+        color: #FFFFFF;
+}
+
+@media (max-width: 860px) {
+    .service-box button {
+        width: 100%;
+        margin: 40px;
+        font-size: 13px;
+    }
+}

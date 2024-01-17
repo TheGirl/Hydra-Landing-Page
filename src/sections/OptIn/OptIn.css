@@ -1,0 +1,185 @@
+.optIn-div {
+    margin: 0;
+    background: #302C42;
+    padding: 30px 60px 20px 60px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.optIn {
+    border-radius: 100px;
+    background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 80px 100px;
+}
+
+.optIn h1, .optIn p {
+    margin-top: 0;
+    text-align: center;
+    font-size: 30px;
+} 
+
+.border {
+    width: 300px;
+    height: 1px;
+    background-image: linear-gradient(to right, #343045, #C0B7E8, #8176AF, #343045);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.optIn h1 {
+    margin-bottom: 20px;
+}
+
+.optIn input {
+    border-radius: 40px;
+    border: 1.5px solid #FFF;
+    width: 96%;
+    height: 60px;
+    background-color: transparent;
+    padding-left: 30px;
+    outline: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.optIn input::placeholder, .optIn textarea::placeholder {
+    color: #ffffff;
+    font-size: small;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+form button {
+    border: 0px solid #FFFFFF;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #343045;
+    background-image: linear-gradient(to right, #8176AF, #C0B7E8);
+    width: fit-content;
+    align-self: center;
+    font-size: 10px;
+}
+
+form button:hover {
+    border: 1.5px solid #FFFFFF;
+    background: transparent;
+    color: #ffffff;
+}
+
+.optIn textarea {
+    border-radius: 40px;
+    border: 1.5px solid #FFF;
+    width: 95.5%;
+    height: 60px;
+    background-color: transparent;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    outline: none;
+    font-size: 18px;
+    color: #ffffff;
+    resize: none;
+    scroll-behavior: auto;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1000px) {
+    .optIn {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    form div {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .optIn textarea, .optIn input {
+        width: 93%;
+    }
+
+    .optIn {
+        padding: 50px 20px;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    .optIn {
+        padding: 30px 20px 40px 20px;
+    }
+
+    form button {
+        width: 95%;
+    }
+    
+    .optIn {
+        border-radius: 50px;
+    }
+
+    .optIn h1, .optIn p {
+        font-size: 20px;
+    } 
+
+    .border {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .optIn textarea {
+        border-radius: 40px;
+        border: 2px solid #FFF;
+        width: 93%;
+        height: 25px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .optIn input {
+        border-radius: 40px;
+        border: 2px solid #FFF;
+        width: 93%;
+        height: 25px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    form {
+        padding-top: 20px;
+        gap: 7px;
+    }
+
+    .optIn input::placeholder, .optIn textarea::placeholder {
+        font-size: 12px;
+    }
+
+    form div {
+        gap: 10px;
+    }
+
+    .border {
+        width: 200px;
+    }
+}

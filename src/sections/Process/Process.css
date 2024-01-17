@@ -1,0 +1,106 @@
+.process-div {
+    font-family: 'Montserrat', sans-serif;
+    background: #302C42;
+    color: #fff;
+}
+
+.process {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 120px 20px 90px;
+}
+
+
+.process div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.process div div {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.process div h1 {
+    background-image: linear-gradient(251deg, #C0B7E8 12.87%, #8176AF 89.33%);
+    border-radius: 50%;
+    padding: 25px;
+    border: 15px solid rgb(34, 30, 49);
+    text-align: center;
+    color: #413d55;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: -5px;
+}
+
+.process div div p {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin-left: 0px;
+    text-align: left;
+}
+
+.process div div img {
+    width: 70px;
+    height: 70px;
+}
+
+.process-small {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    .process {
+        display: none;
+    }
+
+    .process-small {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+    }   
+
+    .process-small div h1 {
+        background-image: linear-gradient(251deg, #C0B7E8 12.87%, #8176AF 89.33%);
+        border-radius: 50%;
+        padding: 25px;
+        border: 15px solid rgb(34, 30, 49);
+        text-align: center;
+        color: #413d55;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 70px;
+        font-weight: 700;
+        margin-bottom: -10px;
+    }
+
+    .process-small div div p {
+        color: #FFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 19px;
+        font-weight: 900;
+        line-height: 1.5;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .process-small div {
+        margin-top: -30px;
+    }
+
+    .process-small p {
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,90 @@
+.section-heading-div {
+    padding: 5px 60px;
+    padding-bottom: 40px;
+    color: #ffffff;
+    background: #302C42;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-heading div {
+    text-transform: uppercase;
+    line-height: .3;
+}
+
+.section-heading div h1 {
+    font-size: 30px;
+}
+
+.section-heading div span {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: -25px;
+}
+
+.section-heading-p {
+    font-size: 13px; 
+    line-height: 1.7; 
+    justify-self: flex-end;
+    width: 50%;
+}
+
+@media (max-width: 1195px) {
+    .section-heading div h1 {
+        font-size: 25px;
+    }
+    
+    .section-heading div span {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1125px) {
+    .section-heading div h1 {
+        font-size: 18px;
+    }
+    
+    .section-heading div span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1027px) {
+
+    .section-heading {
+        justify-content: space-between;
+    }
+
+    .section-heading div {
+        text-transform: uppercase;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 920px) {
+    .section-heading div p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 819px) {
+    .long-arrow {
+        width: 80px;
+    }  
+}
+
+@media (max-width: 760px) {
+    .long-arrow {
+       display: none;
+    }  
+    
+    .section-heading {
+        display: none;
+    }
+}
