@@ -168,6 +168,7 @@
         width: 300px;
         height: 300px;
     }
+    
 
     .intro div p {
         font-size: 20px;
@@ -191,22 +192,6 @@
 
     .intro {
         display: none;
-    }
-
-    .small-heading {
-        display: block;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 30px;
-        line-height: .5;
-    }
-
-    .small-heading h1 {
-        font-size: 30px;
-    }
-
-    .small-heading p {
-        font-size: 30px;
     }
 
     #about {
@@ -235,12 +220,28 @@
 
 @media (max-width: 550px) {
     .about-image {
-        margin: 0 auto;
         width: 300px;
         height: 300px;
     }
 
     .about-p {
         width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    
+    .about-image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 300px) {
+    
+    .about-image {
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
     }
 }

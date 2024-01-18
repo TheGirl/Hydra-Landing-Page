@@ -35,6 +35,10 @@
     width: 50%;
 }
 
+.small-heading {
+    display: none;
+}
+
 @media (max-width: 1195px) {
     .section-heading div h1 {
         font-size: 25px;
@@ -87,4 +91,23 @@
     .section-heading {
         display: none;
     }
+
+    
+    .small-heading {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: .5;
+    }
+
+    .small-heading h1 {
+        font-size: 20px;
+    }
+
+    .small-heading p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 600px) {
 }

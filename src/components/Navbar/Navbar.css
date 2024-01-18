@@ -72,7 +72,7 @@
     animation-name: mobileNavAnime;
     animation-duration: 1s;
     animation-timing-function: ease-in;
-    opacity: .5;
+    opacity: .8;
 }
 
 .close {
@@ -188,7 +188,7 @@ ul li button {
       }
       to {
         transform: translateY(0);
-        opacity: .7;
+        opacity: .8;
       }
 }
 
@@ -199,6 +199,6 @@ ul li button {
       }
       to {
         transform: translateY(-100%);
-        opacity: .7;
+        opacity: .8;
       }
 }

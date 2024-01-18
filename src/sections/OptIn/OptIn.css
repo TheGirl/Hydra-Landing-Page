@@ -183,3 +183,9 @@ form button:hover {
         width: 200px;
     }
 }
+
+@media (max-width: 460px) {
+    .optIn-div {
+        padding: 30px;
+    }
+}

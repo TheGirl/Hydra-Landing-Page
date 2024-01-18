@@ -14,9 +14,9 @@ const Sectionheading = ({heading, paragraph, image}) => {
             </div>
             <p className='section-heading-p'>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
         </div>
-        <div className='small-heading'>
+        <div className='small-heading' style={{fontSize: '15px'}}>
           <h1>{heading}</h1>
-          <p>{paragraph}</p>
+          <p>{paragraph} </p>
       </div>
     </div>
   )

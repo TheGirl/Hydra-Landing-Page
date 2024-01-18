@@ -24,6 +24,7 @@
         display: flex;
         justify-content:center;
         align-items: center;
+        /* width: 90%; */
     }
 
     .boxes-small {
@@ -31,6 +32,7 @@
         flex-direction: row;
         gap: 10px;
         justify-content: space-between;
+        /* width: 250px; */
         padding: 5px 60px;
         height: 450px;
     }
@@ -48,5 +50,11 @@
         background-image: linear-gradient(to right, #8176AF, #C0B7E8);
         border: 10px solid #1e1d24; 
         margin-left: -90px; 
+    }
+}
+
+@media (max-width: 435px) {
+    .boxes-small {
+        width: 250px;
     }
 }
